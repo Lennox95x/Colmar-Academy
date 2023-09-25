@@ -21,6 +21,34 @@ a{
     color:#505050;
 }
 
+.image-container {
+    overflow: hidden;
+    box-shadow: 5px 5px 20px darkslategrey;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    padding: 1rem 0;
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 80%;
+    box-shadow: 5px 5px 20px darkslategrey;
+    transition: all 0.5s ease-in 0.1s;
+}
+
+.button:hover {
+    background-color: darkslategray;
+    padding: 1.25rem 0.5rem;
+    box-shadow: 5px 5px 20px black
+}
+
 /*HEADER*/
 
 header{
@@ -91,16 +119,19 @@ header .mobile {
     display: flex;
     align-items: center;
     background-color: lightgray;
+    padding: 32px 0; /* 32px Abstand oben und unten */
 }
 
 #banner-image {
-    width: 50%;
-    margin: 2rem;
+    width: 60%; /* 60% der Breite */
+    margin: 0 2rem; /* 2rem Abstand rechts und links */
 }
 
-#banner .content {
-    width: 30%;
-    padding: 4rem 1.5rem;
+.content {
+    flex: 1; /* Nimmt den verfügbaren Platz neben dem Bild ein */
+    padding: 0 24px; /* 24px Abstand rechts und links */
+    display: flex;
+    flex-direction: column; /* Anordnung der Inhalte in einer Spalte */
 }
 
 #banner h3 {
