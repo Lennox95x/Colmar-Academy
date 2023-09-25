@@ -1,6 +1,7 @@
 /* Universal Styles */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     border: 0;
     padding: 0;
@@ -15,7 +16,46 @@ body {
     color: #505050;
 }
 
+a{
+    text-decoration: none;
+    color:#505050;
+}
+
 /*HEADER*/
+
+header{
+    font-size: 32px;
+    color: #505050;
+}
+
+nav.desktop {
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px; /* 24px links und rechts */
+}
+
+nav.desktop .right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.desktop .right ul li {
+    margin-right: 16px; /* Abstand zwischen li-Elementen */
+}
+
+nav.desktop .right ul li:last-child {
+    margin-right: 0; /* Kein Abstand nach dem letzten li-Element */
+}
+
+
+
 header .mobile {
     display:none;
 }
@@ -43,4 +83,31 @@ header .mobile {
         width: auto;
         vertical-align: middle;
     }
+}
+
+/* Banner */
+
+#banner {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+#banner-image {
+    width: 50%;
+    margin: 2rem;
+}
+
+#banner .content {
+    width: 30%;
+    padding: 4rem 1.5rem;
+}
+
+#banner h3 {
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+#banner a {
+    color: white;
 }
